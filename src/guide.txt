@@ -1,0 +1,34 @@
+1. Project Description:
+
+   *The project is a REST API implemented in Java using the Spring Boot framework.
+   *The API allows users to fetch the next available number based on a category code.
+   *The fetched number is updated in a database table, ensuring it meets certain criteria.
+   *The API response includes the old and new values.
+
+2. API Endpoint:
+
+   *Endpoint: /fetch-next-number
+   *Method: POST
+   *Request Body: JSON object containing the categoryCode
+
+3. API Usage:
+
+   *Send a POST request to the /fetch-next-number endpoint.
+   *Include the categoryCode in the request body.
+   *The API will fetch the current value for the given category code, generate the next available number, update the value in the database, and return the old and new values in the response.
+
+4. Project Setup:
+
+   *Java and MySQL should be installed.
+   *Set up the database configuration in the application.properties file.
+
+5. Testing:
+
+   *Unit tests have been implemented to ensure the correctness of the system.
+   *Use Junit test frameworks to execute the tests.
+
+6. Data Persistence:
+
+   *The fetched number and its category code are stored in a MySQL database using Hibernate.
+   *The database connection and configuration details are specified in the application.properties file.
+   *The data persists even if the application is restarted.
