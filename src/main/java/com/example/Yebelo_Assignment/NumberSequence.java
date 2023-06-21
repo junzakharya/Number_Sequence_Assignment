@@ -24,4 +24,6 @@ public class NumberSequence {
     @Column(name = "value")
     int value;
 
+    public NumberSequence(String categoryCode, int i) {
+    }
 }
